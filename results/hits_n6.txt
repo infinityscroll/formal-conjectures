@@ -1,0 +1,7 @@
+189B E?ow leaves=4 twoconn=0
+189B E?zo leaves=1 twoconn=0
+189B E?~o leaves=0 twoconn=1
+189B E?~w leaves=0 twoconn=1
+189B ECR_ leaves=3 twoconn=0
+189B ECqg leaves=3 twoconn=0
+189B ECYW leaves=2 twoconn=0

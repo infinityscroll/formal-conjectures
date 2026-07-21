@@ -1,0 +1,13 @@
+=== Run A: n=4..9 (serial) ===
+n=4 done: done: total=6 nontraceable=1
+n=5 done: done: total=21 nontraceable=3
+n=6 done: done: total=112 nontraceable=21
+n=7 done: done: total=853 nontraceable=119
+n=8 done: done: total=11117 nontraceable=1087
+n=9 done: done: total=261080 nontraceable=12653
+=== Run A: n=10 (12-way) ===
+n=10 done: total=11716571 nontraceable=233999
+=== Run B: n=11 (12-way) ===
+n=11 done: total=1006700565 nontraceable=6469055
+ALL SWEEPS COMPLETE
+EXIT 0

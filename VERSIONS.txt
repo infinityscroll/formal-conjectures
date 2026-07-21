@@ -1,0 +1,8 @@
+Apple clang version 16.0.0 (clang-1600.0.26.6)
+
+nauty nauty 2.9.3
+geng: /opt/homebrew/bin/geng (nauty 2.9.3)
+ProductName:		macOS
+ProductVersion:		26.1
+BuildVersion:		25B78
+networkx 3.3
