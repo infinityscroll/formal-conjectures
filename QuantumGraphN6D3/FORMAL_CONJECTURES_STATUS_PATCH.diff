@@ -1,0 +1,68 @@
+diff --git a/FormalConjectures/Paper/MonochromaticQuantumGraph.lean b/FormalConjectures/Paper/MonochromaticQuantumGraph.lean
+--- a/FormalConjectures/Paper/MonochromaticQuantumGraph.lean
++++ b/FormalConjectures/Paper/MonochromaticQuantumGraph.lean
+@@
+ /-- For $N = 6$ and $D = 5$, does there exist no solution to the monochromatic quantum graph
+-equation system over $\mathbb{Z}$? -/
+-@[category research open, AMS 5 14 81]
++equation system over $\mathbb{Z}$?
++
++This follows from the $D = 3$ result by restricting any five-colour solution to three colours.
++-/
++@[category research solved, AMS 5 14 81, formal_proof using lean4 at
++"https://github.com/DomTheDeveloper/formal-conjectures/blob/15460200e4897f7444b617e9ea95e53b825f4748/QuantumGraphColorRestriction.lean#L163-L166"]
+ theorem eqSystem6_no_solution_d5_int :
+-    answer(sorry) ↔
++    answer(True) ↔
+       ¬ ∃ W : WeightsN 6 5 ℤ, EqSystemN 6 5 W := by
+   sorry
+@@
+ /-- For $N = 6$ and all $D \geq 3$, does there exist no solution to the monochromatic quantum graph
+-equation system over $\mathbb{Z}$? -/
+-@[category research open, AMS 5 14 81]
++equation system over $\mathbb{Z}$?
++
++This follows from the $D = 3$ result because solution existence is downward-closed in the number
++of colours.
++-/
++@[category research solved, AMS 5 14 81, formal_proof using lean4 at
++"https://github.com/DomTheDeveloper/formal-conjectures/blob/15460200e4897f7444b617e9ea95e53b825f4748/QuantumGraphColorRestriction.lean#L169-L174"]
+ theorem eqSystem6_no_solution_ge3_int :
+-    answer(sorry) ↔
++    answer(True) ↔
+       ∀ D : Nat, D ≥ 3 →
+         ¬ ∃ W : WeightsN 6 D ℤ, EqSystemN 6 D W := by
+   sorry
+@@
+ /-- For $N = 6$ and $D = 5$, does there exist no solution to the monochromatic quantum graph
+-equation system over $\mathbb{Z}$ with weights in $\{-1, 0, 1\}$? -/
+-@[category research open, AMS 5 14 81]
++equation system over $\mathbb{Z}$ with weights in $\{-1, 0, 1\}$?
++
++This follows from the unrestricted integer result.
++-/
++@[category research solved, AMS 5 14 81, formal_proof using lean4 at
++"https://github.com/DomTheDeveloper/formal-conjectures/blob/15460200e4897f7444b617e9ea95e53b825f4748/QuantumGraphColorRestriction.lean#L177-L182"]
+ theorem eqSystem6_no_solution_d5_trinary_int :
+-    answer(sorry) ↔
++    answer(True) ↔
+       ¬ ∃ W : WeightsN 6 5 ℤ,
+           (∀ e, W e = (-1 : ℤ) ∨ W e = 0 ∨ W e = 1) ∧
+             EqSystemN 6 5 W := by
+   sorry
+@@
+ /-- For $N = 6$ and all $D \geq 3$, does there exist no solution to the monochromatic quantum graph
+-equation system over $\mathbb{Z}$ with weights in $\{-1, 0, 1\}$? -/
+-@[category research open, AMS 5 14 81]
++equation system over $\mathbb{Z}$ with weights in $\{-1, 0, 1\}$?
++
++This follows from the unrestricted integer result.
++-/
++@[category research solved, AMS 5 14 81, formal_proof using lean4 at
++"https://github.com/DomTheDeveloper/formal-conjectures/blob/15460200e4897f7444b617e9ea95e53b825f4748/QuantumGraphColorRestriction.lean#L185-L192"]
+ theorem eqSystem6_no_solution_ge3_trinary_int :
+-    answer(sorry) ↔
++    answer(True) ↔
+       ∀ D : Nat, D ≥ 3 →
+         ¬ ∃ W : WeightsN 6 D ℤ,
+             (∀ e, W e = (-1 : ℤ) ∨ W e = 0 ∨ W e = 1) ∧
